@@ -67,18 +67,18 @@ TorusTroiPlane
           </BasicMaterial>
         </Torus> -->
         <EffectComposer>
-          <FilmPass />
-          <UnrealBloomPass :strength="1" />
+          <!-- <FilmPass /> -->
+          <!-- <UnrealBloomPass :strength="1" /> -->
           <Text
             text="POLYGONUM"
             :font-src="textFont"
             align="center"
             :size="textMesh"
-            :height="0.4"
+            :height="0.6"
             :position="{ x: 0, y: 6, z: 0 }"
           >
           </Text>
-          <Text
+          <!-- <Text
             text="FRIDAY 9PM"
             :font-src="textFont"
             align="center"
@@ -86,7 +86,7 @@ TorusTroiPlane
             :height="0.4"
             :position="{ x: 0, y: 0, z: 0 }"
           >
-          </Text>
+          </Text> -->
 
           <Text
             text="location"
@@ -120,11 +120,11 @@ TorusTroiPlane
         />
       </Scene>
       <EffectComposer>
-        <!-- <FilmPass /> -->
+        <FilmPass />
         <RenderPass />
-        <!-- <SMAAPass /> -->
-        <!-- <UnrealBloomPass :strength="0.01" /> -->
-        <!-- <HalftonePass :radius="1" :scatter="0" /> -->
+        <SMAAPass />
+        <UnrealBloomPass :strength="0.01" />
+        <HalftonePass :radius="1" :scatter="0" />
       </EffectComposer>
     </Renderer>
   </div>
@@ -150,7 +150,9 @@ TorusTroiPlane
   <RouterView /> -->
 </template>
 <script>
+import { RouterLink, RouterView } from "vue-router";
 import { HelvetikerUtil } from "@/components/HelvetikerUtils";
+import HelloWorld from "./components/HelloWorld.vue";
 import { Plane, Raycaster, Vector3 } from "three";
 import { FontLoader } from "three/examples/jsm/loaders/FontLoader";
 
