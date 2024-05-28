@@ -1,0 +1,16 @@
+{
+    "name": "Polygonum Token",
+    "description": "Polygonum it is future vision of electronic music, unique characher, innovation and style",
+    "image": "https://surf-5c38d.web.app/polygonum.webp",
+    "external_url": "https://surf-5c38d.web.app",
+    "attributes": [
+        {
+            "trait_type": "Artefact", 
+            "value": "Polygonum"
+        },
+        {
+            "trait_type": "Collection", 
+            "value": "Genesis"
+        }
+    ]
+}
